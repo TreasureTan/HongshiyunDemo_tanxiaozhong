@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.createsaga.demo.HSYLiveActivity">
+
+    <com.arcvideo.camerarecorder.CameraSurfaceView
+        android:id="@+id/hsylive_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.arcvideo.camerarecorder.CameraSurfaceView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/prepareView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启预览"
+            android:onClick="prepareView"
+            />
+        <Button
+            android:id="@+id/closeprepareView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭预览"
+            android:onClick="closeprepareView"
+            />
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启直播"
+            android:onClick="start"
+            />
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停直播"
+            android:onClick="pause"
+            />
+        <Button
+            android:id="@+id/resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恢复直播"
+            android:onClick="resume"
+            />
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止直播"
+            android:onClick="stop"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

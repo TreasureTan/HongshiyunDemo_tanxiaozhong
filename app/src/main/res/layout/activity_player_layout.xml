@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<AbsoluteLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<com.starunion.hefanlive.view.HefanPlayerSaurface-->
+            <!--android:id="@+id/HefanPlayerSaurface"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--/>-->
+    <!--</AbsoluteLayout>-->
+    <com.starunion.hefanlive.view.HefanIjkPlayer
+        android:id="@+id/hefan_plplayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.starunion.hefanlive.view.HefanIjkPlayer>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="onPlay"
+        android:text="播放"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="onPause"
+        android:text="暂停"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="onStop"
+        android:text="停止"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
